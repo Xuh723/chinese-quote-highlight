@@ -24,7 +24,7 @@ export class ChineseQuoteSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Highlight color")
-			.setDesc("Color for text wrapped in Chinese quotation marks.")
+			.setDesc("Select the highlight color for quoted text.")
 			.addColorPicker((color) =>
 				color
 					.setValue(this.plugin.settings.highlightColor)
