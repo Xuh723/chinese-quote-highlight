@@ -1,5 +1,6 @@
 import { Plugin } from "obsidian";
 import { chineseQuoteViewPlugin } from "./chineseQuoteHighlight";
+import { createChineseQuotePostProcessor } from "./postProcessor";
 import {
 	ChineseQuoteSettings,
 	DEFAULT_SETTINGS,
@@ -13,6 +14,7 @@ export default class ChineseQuotePlugin extends Plugin {
 		await this.loadSettings();
 		this.applyHighlightColor();
 		this.registerEditorExtension(chineseQuoteViewPlugin);
+		this.registerMarkdownPostProcessor(createChineseQuotePostProcessor());
 		this.addSettingTab(new ChineseQuoteSettingTab(this.app, this));
 	}
 
