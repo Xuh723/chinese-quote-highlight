@@ -1,3 +1,7 @@
 .chinese-quote-highlight {
 	color: var(--chinese-quote-color, #66ccff);
 }
+
+.corner-quote-highlight {
+	color: var(--corner-quote-color, #ffcc66);
+}

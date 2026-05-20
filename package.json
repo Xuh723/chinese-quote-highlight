@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-sample-plugin",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Obsidian plugin that highlights text wrapped in Chinese quotation marks and corner quotes with customizable colors.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {
