@@ -1,9 +1,9 @@
 {
 	"id": "chinese-quote-highlight",
 	"name": "Chinese Quote Highlight",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Highlights text wrapped in Chinese quotation marks with color #66ccff.",
+	"description": "Highlights text wrapped in Chinese quotation marks (\"...\") and corner quotes (\u300c...\u300d) with customizable colors.",
 	"author": "",
 	"isDesktopOnly": false
 }
