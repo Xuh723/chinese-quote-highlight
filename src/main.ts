@@ -1,8 +1,7 @@
 import { Plugin } from "obsidian";
 import type { EditorView } from "@codemirror/view";
 import {
-	chineseQuoteViewPlugin,
-	cornerQuoteViewPlugin,
+	quoteViewPlugin,
 	setCornerQuotesEnabled,
 } from "./chineseQuoteHighlight";
 import { createChineseQuotePostProcessor } from "./postProcessor";
@@ -19,10 +18,7 @@ export default class ChineseQuotePlugin extends Plugin {
 		await this.loadSettings();
 		setCornerQuotesEnabled(this.settings.enableCornerQuotes);
 		this.applyHighlightColor();
-		this.registerEditorExtension([
-			chineseQuoteViewPlugin,
-			cornerQuoteViewPlugin,
-		]);
+		this.registerEditorExtension([quoteViewPlugin]);
 		this.registerMarkdownPostProcessor(
 			createChineseQuotePostProcessor(this)
 		);
